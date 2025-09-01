@@ -59,21 +59,19 @@ function fuelIndcationfunction(){
     let userFuel = prompt("Enter the fuel you have put in.. \n enter in Liters \n car tank is of 5 liters \n")
     let resultantFuel = userFuel;
     
-    if(resultantFuel == "5Liters"){
+    if(resultantFuel == 5){
         alert("You Are full with the 'Fuel'!")
-    }else if(resultantFuel <= "5Liters"){
-        alert("You have enough 'Fuel lefted'")
-    }else if(resultantFuel < "1Liters"){
+    }else if(resultantFuel <= 1){
         alert("you are 'Low on Fuel' Fill up!");
-    }else{
-        alert("please enter the 'Liters' phrase or check the numbers pefectly")
-    };
+    }else if(resultantFuel != 5){
+        alert("You have enough 'Fuel lefted'")
+    }
 }
 
 //checking script //
 function sciptCheckingfunction(){
 
-    var a = 4;
+    var a = 4;  
     if (++a === 5){
     alert("given condition for variable a is true");
     }
@@ -118,25 +116,23 @@ function gradeCheckingfunction(){
     let userGrade = prompt("Enter your Grade on the scale of 10-100%");
     resultantGrade = userGrade;
 
-    if(resultantGrade >= "90%"){
+    if(resultantGrade >= 90){
         alert("Congratulations You got A1 Grade");
-    }else if(resultantGrade >= "80%"){
+    }else if(resultantGrade >= 80){
         alert("Congratulations You got A+ Grade");
-    }else if(resultantGrade >= "70%"){
+    }else if(resultantGrade >= 70){
         alert("Congratulations You got A Grade");
-    }else if(resultantGrade >= "65%"){
+    }else if(resultantGrade >= 65){
         alert("Congratulations You got B+ Grade");
-    }else if(resultantGrade >= "60%"){
+    }else if(resultantGrade >= 60){
         alert("Congratulations You got B Grade");
-    }else if(resultantGrade >= "50%"){
+    }else if(resultantGrade >= 50){
         alert("Congratulations You got C Grade");
-    }else if(resultantGrade >= "40%"){
+    }else if(resultantGrade >= 40){
         alert("Congratulations You got E Grade");
-    }else if(resultantGrade >= "33%"){
+    }else if(resultantGrade >= 33){
         alert("Congratulations You are Passed");
-    }else if(resultantGrade <= "33%"){
-        alert("Congratulations You got A+ Grade");
+    }else{
+        alert("Congratulations You got F you are Failed");
     }
-
-
 }
