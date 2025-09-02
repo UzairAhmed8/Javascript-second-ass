@@ -136,3 +136,92 @@ function gradeCheckingfunction(){
         alert("Congratulations You got F you are Failed");
     }
 }
+
+//Guess Game //
+
+function guessGamefuntion(){
+
+    let userGuess = prompt("Guess game \n Guess a Number from the Range of 1-10 \n")
+    let userGuessresults = userGuess;
+
+    if(userGuessresults == 4){
+        alert("Bingo You got The Correct one")
+    }else{
+        alert("You loosed")
+    }
+}
+
+//=============//
+
+// divisible Check // 
+
+function divisibleFunction() {
+    let divisbleInput = prompt("Enter a Number to \nDivide it with 3");
+    let divisbleResult = Number(divisbleInput);
+    let dividingNum = 3;
+
+    if (divisbleResult % dividingNum === 0) { 
+        alert("It can be divided by three");
+    } else {
+        alert("It cannot be divided by three");
+    }
+}
+
+//==========//
+
+// Even odd Checker //
+
+function evenNumberchecker(){
+    let userInpchecker = prompt("Enter a number to check wether its even or odd!");
+    let userInpcheckerResult = parseInt(userInpchecker);
+
+    if(isNaN(userInpcheckerResult)){
+        alert("Please Enter a Valid number")
+    }else if(userInpcheckerResult % 2 === 0){
+        alert(userInpcheckerResult + " is Even")
+    }else{
+        alert(userInpcheckerResult + " is Odd")
+    }
+
+}
+
+//========//
+
+//Temprature Check//
+
+function tempCheckfunc(){
+
+    let userTemp = prompt("Enter The Degrees you wanna check!");
+    let userTempresult = parseInt(userTemp);
+
+    if(userTempresult >= 40){
+        alert("its Too much Hot out side!")
+    }else if(userTempresult >= 30){
+        alert("The weather today is normal!")
+    }else if(userTempresult >= 20){
+        alert("The weather today is Cool!")
+    }else{
+        alert("OMG! its Too much Cold outside")
+    }
+}
+
+//================//
+
+function calculatorFunc(){
+
+    let num1 = prompt("Enter 1st number");
+    let num2 = prompt("Enter 2nd number");
+    let operator = prompt("Enter an operator \n add,sub,mul,divid ")
+    let convertedNum1 = Number(num1);
+    let convertedNum2 = Number(num2);
+
+    if(operator == "add"){
+        alert(convertedNum1 + convertedNum2)
+    }else if(operator == "sub"){
+        alert(convertedNum1 - convertedNum2)
+    }else if(operator == "mul"){
+        alert(convertedNum1 * convertedNum2)
+    }else{
+        alert(convertedNum1 / convertedNum2)
+    }
+}

@@ -78,3 +78,9 @@ button:hover{
     color: black;
     transform: scale(1.03);
 }
+
+.all-con{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
